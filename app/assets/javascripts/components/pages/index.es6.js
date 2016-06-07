@@ -9,8 +9,12 @@ class IndexComponent extends React.Component {
 	}
 
 	render() {
-		return <h2>Echo: {this.state.message}</h2>;
-	}
+    return(
+      <div>
+        Echo: {this.state.message}
+      </div>
+    );
+  }
 }
 
 // module.exports = IndexComponent;
