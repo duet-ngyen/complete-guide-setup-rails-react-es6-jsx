@@ -28,4 +28,4 @@
 
 <%= link_to 'New Book', new_book_path %>
 
-<%= react_component('app.IndexBook', books: @books) %>
+<%= react_component('app.IndexBook', books: @books.map(&:to_json)) %>
