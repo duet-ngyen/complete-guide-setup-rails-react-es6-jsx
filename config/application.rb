@@ -28,5 +28,7 @@ module Es6Demo
     config.active_record.raise_in_transactional_callbacks = true
 
     config.browserify_rails.commandline_options = "-t babelify --extension=\"es6.js\""
+
+    config.react.addons = true
   end
 end

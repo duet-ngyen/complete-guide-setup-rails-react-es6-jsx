@@ -26,16 +26,17 @@ create file .babelrc in the root folder and add
 }
 ```
 
-run terminal
-```
-bundle
-npm install
-```
 add content to
 ```
 package.json
 assets/javascripts/application.js
 assets/javascripts/components.js
 ```
+same in project
 
-as in project
+
+run terminal
+```
+bundle
+npm install
+```
