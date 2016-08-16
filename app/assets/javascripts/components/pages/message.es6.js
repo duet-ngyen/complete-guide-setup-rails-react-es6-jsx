@@ -4,7 +4,7 @@ class Message extends React.Component {
   render() {
     return(
       <div>
-        <h2>Message</h2>
+        <h2 className="heading-pro">{this.props.message}</h2>
       </div>
     );
   }

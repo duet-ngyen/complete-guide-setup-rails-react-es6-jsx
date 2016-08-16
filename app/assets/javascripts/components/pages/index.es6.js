@@ -5,25 +5,36 @@ class IndexComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			message: props.message
+			message: props.message,
+      clicked: false
 		};
 	}
 
   click_button(e) {
     console.log(e.target.value);
     this.setState({ message: `button ${e.target.value} clicked` });
+    this.setState({ clicked: true})
   }
 
 	render() {
+    var message=(<span>{this.state.message} from index</span>);
+    var div_clicked;
+    if(this.state.clicked){
+      div_clicked=(<span>You was clicked</span>)
+    }else{
+      div_clicked=(
+      <input
+        type    = "button"
+        onClick = { this.click_button.bind(this) }
+        value   = "Click me!"
+      />)
+    }
+
     return(
       <div>
-        Echo: {this.state.message}
-        <Message/>
-        <input
-          type    = "button"
-          onClick = { this.click_button.bind(this) }
-          value   = "Click me!"
-        />
+        <span>{this.state.message}</span>
+        <Message message={message}/>
+        {div_clicked}
       </div>
     );
   }
