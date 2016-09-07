@@ -8,7 +8,7 @@
 //noinspection JSAnnotator
 const app = window.app = global.app = {};
 
-import IndexComponent from './components/pages/index.es6.js';
+import IndexComponent from './components/pages/index.es6.jsx';
 
 // Expose components to global scope
 app.IndexComponent = IndexComponent;

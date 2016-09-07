@@ -1,12 +1,12 @@
 import React, {Component, PropTypes} from 'react';
-import Message from 'components/pages/message.es6'
+import Message from 'components/pages/message.es6.jsx'
 
 class IndexComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			message: props.message,
-      clicked: false
+            clicked: false,
 		};
 	}
 
