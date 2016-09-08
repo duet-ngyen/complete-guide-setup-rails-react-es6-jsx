@@ -53,3 +53,6 @@ group :production do
 end
 
 gem 'faker'
+gem 'pry'
+
+gem 'kaminari'

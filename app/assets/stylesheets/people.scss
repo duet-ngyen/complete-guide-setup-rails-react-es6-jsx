@@ -1,3 +1,19 @@
-// Place all the styles related to the people controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.person-card{
+  float: left;
+  display: block;
+  width: 30%;
+  border: solid 1px grey;
+  height: 300px;
+  margin: 5px;
+}
+
+#search-user{
+  width: 50%;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.clear-both{
+  clear: both
+}
