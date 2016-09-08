@@ -9,6 +9,8 @@
 const app = window.app = global.app = {};
 
 import IndexComponent from './components/pages/index.es6.jsx';
+import PeopleSection from './components/people/people_section.es6.jsx'
 
 // Expose components to global scope
 app.IndexComponent = IndexComponent;
+app.PeopleSection  = PeopleSection;
