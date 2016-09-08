@@ -45,7 +45,7 @@ class PeopleSection extends Component{
             },
             success: function(response) {
                 // $(div_class_results).html(response);
-                this.setState({people: response});
+                this.setState({people: response["people"]});
                 this.setState({meta: response["meta"]});
             }.bind(this)
         });
